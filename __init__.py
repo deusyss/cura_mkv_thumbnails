@@ -1,7 +1,7 @@
-# Copyright (c) 2020 LotmaxxSnapshot
-# The LotmaxxSnapshot plugin is released under the terms of the AGPLv3 or higher.
+# Copyright (c) 2023 cura_mkv_thumbnails
+# The cura_mkv_thunbnails plugin is released under the terms of the AGPLv3 or higher.
 
-from . import LotmaxxSnapshot
+from . import cura_mkv_thumbnails
 
 
 def getMetaData():
@@ -9,4 +9,4 @@ def getMetaData():
 
 
 def register(app):
-    return {"extension": LotmaxxSnapshot.LotmaxxSnapshot()}
+    return {"extension": cura_mkv_thumbnails.MkvThumbnailsSnapshot()}

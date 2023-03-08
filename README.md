@@ -5,7 +5,9 @@
 
 Cura plugin generating and embedding snapshot image of a model in a gcode.
 
-Designed and Tested with Lotmax SC-10 Shark (users are mentioning it also works with MKS boards). If it works with other printers, please let me know.
+This fork has been made generic, not specific to a single model, by making code more Pythonic and without any printer name reference. It works with MKS motherboards. I used it on a Two trees Bluer Plus.
+
+Procedure is the same as orignial repository, as following
 
 This plugin can be configured to work only with given printers, to avoid adding unnecessary snapshot images to the G-code for printers which do not support them.
  
@@ -27,6 +29,12 @@ This plugin can be configured to work only with given printers, to avoid adding 
 - At the top of `Start G-code` add `;simage` and/or `;gimage` depending on your needs. If you're unsure which one you need - add both.  
 ![G-code](images/cura_4.jpg "G-code")
 
-# Support
+# Use
+- Configure your print
+- Move the STL preview as you want. What you see on screen will be what you'll see on your printer. Plugin just make a screenshot
+- Save your gcode.
+- Optionally, you can check the gcode. It must start by a simage and gimage sections.
 
-If you enjoy my work here, maybe [consider leaving me a tip](https://www.paypal.com/paypalme/danielkukiela)?
+# THANKS TO
+
+Thanks to initial developer: Daniel Kukiela

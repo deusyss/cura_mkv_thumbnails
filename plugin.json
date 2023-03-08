@@ -1,7 +1,7 @@
 {
-    "name": "LotmaxxSnapshot plugin",
-    "author": "DhanOS",
-    "version": "0.2",
-    "description": "Adds Lotmaxx printer compatible snapshot (model image) to a gcode",
+    "name": "cura_mkv_thumbnails plugin",
+    "author": "DhanOS, Deusyss(generic_version)",
+    "version": "0.1",
+    "description": "Adds cura_mkv_thumbnails printer compatible snapshot (model image) to a gcode",
     "supported_sdk_versions": ["7.0.0", "8.0.0"]
 }

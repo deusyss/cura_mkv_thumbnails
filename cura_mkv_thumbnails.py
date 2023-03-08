@@ -1,5 +1,8 @@
-# Copyright (c) 2020 DhanOS
-# The LotmaxxSnapshot is released under the terms of the AGPLv3 or higher.
+"""
+Copyright (c) 2020 DhanOS
+Copyright (c) 2023 Deusyss
+Released under the terms of the AGPLv3 or higher.
+"""
 
 from UM.Extension import Extension
 from UM.Application import Application
@@ -9,7 +12,7 @@ from cura.Snapshot import Snapshot
 
 
 # Main class
-class LotmaxxSnapshot(Extension):
+class MkvThumbnailsSnapshot(Extension):
 
     # Init
     def __init__(self):
@@ -79,6 +82,7 @@ class LotmaxxSnapshot(Extension):
                     image_gcode = ';;gimage:' + self.create_snapshot((200, 200))
                     # Remove the tag
                     #self.scene.gcode_dict[build_plate_number][index] = self.scene.gcode_dict[build_plate_number][index].replace(';gimage', '')
+
                     # Add image G-code to the beginning of the G-code
                     self.scene.gcode_dict[0][0] = image_gcode + self.scene.gcode_dict[0][0]
 
@@ -90,3 +94,4 @@ class LotmaxxSnapshot(Extension):
                     #self.scene.gcode_dict[build_plate_number][index] = self.scene.gcode_dict[build_plate_number][index].replace(';simage', '')
                     # Add image G-code to the beginning of the G-code
                     self.scene.gcode_dict[0][0] = image_gcode + self.scene.gcode_dict[0][0]
+
